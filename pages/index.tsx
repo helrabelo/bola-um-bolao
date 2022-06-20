@@ -1,24 +1,23 @@
 import type { NextPage } from 'next';
+import classNames from 'classnames';
 
 import styles from '../styles/Home.module.css';
+
+import { Aside, Footer, Navbar } from '../components';
 
 const Home: React.FC<NextPage> = () => {
   return (
     <div className={styles.pageWrapper}>
-      <div className={styles.navbarContainer}>
-        <h1>Navbar</h1>
-      </div>
+      <Navbar />
       <div className={styles.mainContainer}>
         <div className={styles.aside}>
-          <h1>Aside</h1>
+          <Aside />
         </div>
         <div className={styles.main}>
           <h1>Main</h1>
         </div>
       </div>
-      <div className={styles.footerContainer}>
-        <h1>Footer</h1>
-      </div>
+      <Footer />
     </div>
   );
 };

@@ -1,8 +1,12 @@
 .pageWrapper {
   display: flex;
   flex-direction: column;
-  border: thin solid red;
   min-height: 100vh;
+  height: 100%;
+  background-image: url('/hero-background.jpeg');
+  object-fit: cover;
+  background-repeat: no-repeat;
+  justify-content: space-between;
 }
 
 .mainContainer {
@@ -11,8 +15,7 @@
   grid-template-columns: repeat(16, 1fr);
   gap: 20px;
   width: 100%;
-  border: thin solid red;
-  
+
   max-width: 1200px;
 
   @media (max-width: 1200px) {
@@ -37,9 +40,15 @@
   }
 }
 
+/* ASIDE */
+
 .aside {
   grid-column: span 4;
   @media (max-width: 600px) {
     grid-column: span 4;
   }
+}
+
+.asideNavMegasena {
+  background-color: var(--color-megasena);
 }

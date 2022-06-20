@@ -1,0 +1,36 @@
+.AsideWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-right: 1px solid #e5e5e5;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 4px;
+  padding-right: 20px;
+}
+
+.button {
+  padding-left: 24px;
+  cursor: pointer;
+}
+
+.gameMegaSena {
+  background-color: var(--color-megasena);
+}
+
+.gameQuina {
+  background-color: var(--color-quina);
+}
+
+.gameLotofacil {
+  background-color: var(--color-lotofacil);
+}
+
+.gameDuplaSena {
+  background-color: var(--color-duplasena);
+}
+
+.gameLotoMania {
+  background-color: var(--color-lotomania);
+}
