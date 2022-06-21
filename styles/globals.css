@@ -9,16 +9,17 @@
   --color-lotofacil: #930089;
   --color-megasena: #209869;
   --color-milionaria: #260085;
-  --color-duplasena: #BF194E;
+  --color-duplasena: #bf194e;
   --color-lotomania: #f7941d;
+  --color-body-text: #4c556c;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   color: white;
 }
 
@@ -31,8 +32,12 @@ a {
   box-sizing: border-box;
 }
 
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Futura Md BT', sans-serif;
 }
 
@@ -40,7 +45,10 @@ a {
   font-family: 'Futura Lt BT', sans-serif;
 }
 
-p, span, div {
-  font-family: 'Helvetica', 'Roboto', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;  
+p,
+span,
+div {
+  font-family: 'Helvetica', 'Roboto', -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
 }

@@ -39,7 +39,12 @@ const Aside = () => {
       <div className={styles.AsideWrapper}>
         {games.map((game) => (
           <div className={game.className} key={game.id}>
-            <Link href={`/games/${game.id}`}>
+            <Link
+              href={`/${game.name
+                .replace(' ', '-')
+                .toLowerCase()
+                .replace('á', 'a')}`}
+            >
               <a>
                 <h1>{game.name}</h1>
               </a>
