@@ -5,6 +5,7 @@
   height: 100%;
   background-image: url('/hero-background.jpeg');
   object-fit: cover;
+  object-position: center center;
   background-repeat: no-repeat;
   justify-content: space-between;
 }

@@ -5,46 +5,24 @@ import classNames from 'classnames';
 
 import sharedStyles from '../../styles/shared.module.css';
 
-const games = [
-  {
-    id: 1,
-    name: 'Mega Sena',
-    className: classNames(styles.button, styles.gameMegaSena),
-  },
-  {
-    id: 2,
-    name: 'Quina',
-    className: classNames(styles.button, styles.gameQuina),
-  },
-  {
-    id: 3,
-    name: 'Lotofácil',
-    className: classNames(styles.button, styles.gameLotofacil),
-  },
-  {
-    id: 4,
-    name: 'Dupla Sena',
-    className: classNames(styles.button, styles.gameDuplaSena),
-  },
-  {
-    id: 5,
-    name: 'LotoMania',
-    className: classNames(styles.button, styles.gameLotoMania),
-  },
-];
+import { games } from '../../util/consts';
 
 const Aside = () => {
   return (
     <div className={sharedStyles.Container}>
       <div className={styles.AsideWrapper}>
         {games.map((game) => (
-          <div className={game.className} key={game.id}>
-            <Link
-              href={`/${game.name
-                .replace(' ', '-')
-                .toLowerCase()
-                .replace('á', 'a')}`}
-            >
+          <div
+            className={classNames(styles.button, {
+              [styles.gameMegaSena]: game.name === 'Mega Sena',
+              [styles.gameQuina]: game.name === 'Quina',
+              [styles.gameDuplaSena]: game.name === 'Dupla Sena',
+              [styles.gameLotofacil]: game.name === 'Lotofácil',
+              [styles.gameLotoMania]: game.name === 'LotoMania',
+            })}
+            key={game.id}
+          >
+            <Link href={game.url}>
               <a>
                 <h1>{game.name}</h1>
               </a>

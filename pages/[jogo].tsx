@@ -1,4 +1,4 @@
-import { Aside, Layout } from '../components';
+import { Aside, Games, Layout } from '../components';
 
 import { useRouter } from 'next/router';
 
@@ -13,7 +13,7 @@ const GamePage = () => {
         <Aside />
       </div>
       <div className={styles.main}>
-        <h1>{query.jogo}</h1>
+        <Games gameId={query.jogo} />
       </div>
     </Layout>
   );
