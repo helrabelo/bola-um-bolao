@@ -12,6 +12,13 @@
   --color-duplasena: #bf194e;
   --color-lotomania: #f7941d;
   --color-body-text: #4c556c;
+  --color-card-background: #f5f5f5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,

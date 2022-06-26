@@ -25,3 +25,12 @@ export const games = [
     url: '/lotomania',
   },
 ];
+
+export const gamesRules = {
+  megaSena: {
+    gameMinValue: 1,
+    gameMaxValue: 60,
+    gameMinNumbers: 6,
+    gameMaxNumbers: 15,
+  }
+}

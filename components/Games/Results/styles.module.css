@@ -1,0 +1,64 @@
+.resultsWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.gameWrapper {
+  width: 100%;
+  background: var(--color-card-background);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  color: var(--color-caixa-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.gameId {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.gameNumbers {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.number {
+  font-size: 24px;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  margin: 0;
+  font-weight: bold;
+  color: white;
+  border-radius: 100px;
+  padding: 12px;
+  background-color: var(--color-caixa-primary);
+}
+
+.megaSena {
+  background-color: var(--color-megasena);
+}
+
+.lotofacil {
+  background-color: var(--color-lotofacil);
+}
+
+.quina {
+  background-color: var(--color-quina);
+}
+
+.lotomania {
+  background-color: var(--color-lotomania);
+}
+
+.duplaSena {
+  background-color: var(--color-duplasena);
+}
