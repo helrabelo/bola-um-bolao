@@ -53,6 +53,10 @@ const MegaSena = () => {
     <div className={styles.mainGameWrapper}>
       <Actions>
         <h1>Mega Sena</h1>
+        <div className={styles.filterWrappers}>
+          
+        </div>
+
         <div className={styles.actionsWrapper}>
           {/* Total de Jogos */}
           <div className={styles.actionItem}>
@@ -90,9 +94,14 @@ const MegaSena = () => {
             </div>
           </div>
           {/* Button Wrapper */}
-          <div className={styles.actionItem}>
-            <button className={styles.mainButton} onClick={() => handleGenerateGames()}>Sortear</button>
-          </div>
+        </div>
+        <div className={styles.mainButtonWrapper}>
+          <button
+            className={styles.mainButton}
+            onClick={() => handleGenerateGames()}
+          >
+            Sortear
+          </button>
         </div>
       </Actions>
       <Results games={results} gameType="mega-sena" />
